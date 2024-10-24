@@ -220,7 +220,9 @@ class Preview_3DMesh:
         
         previews = [
             {
-                "filepath": mesh_file_path,
+                "filename": filename,
+                "type": "output",
+                "subfolder": mesh_folder_path,
             }
         ]
         return {"ui": {"previews": previews}, "result": ()}
